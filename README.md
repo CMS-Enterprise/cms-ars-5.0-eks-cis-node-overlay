@@ -66,6 +66,7 @@ Executing the profile by downloading it to the runner:
 ```
 git clone https://github.com/CMS-Enterprise/cms-ars-5.0-eks-cis-node-overlay.git
 cd cms-ars-5.0-eks-cis-node-overlay
+# How to run (linux)
 BASELINE=<your_system_categorization> cinc-auditor exec . -t ssh://ec2-user@<node 1 IP address> -i private_key.pem --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter cli json:node1results.json
 ...
 BASELINE=<your_system_categorization> cinc-auditor exec . -t ssh://ec2-user@<node N IP address> -i private_key.pem --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter cli json:nodeNresults.json
@@ -74,6 +75,7 @@ BASELINE=<your_system_categorization> cinc-auditor exec . -t ssh://ec2-user@<nod
 Executing the profile by executing it from this GitHub repository:
 
 ```
+# How to run (linux)
 BASELINE=<your_system_categorization> cinc-auditor exec https://github.com/CMS-Enterprise/cms-ars-5.0-eks-cis-node-overlay/archive/main.tar.gz -t ssh://ec2-user@<node 1 IP address> -i private_key.pem --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter cli json:node1results.json
 ...
 BASELINE=<your_system_categorization> cinc-auditor exec https://github.com/CMS-Enterprise/cms-ars-5.0-eks-cis-node-overlay/archive/main.tar.gz -t ssh://ec2-user@<node N IP address> -i private_key.pem --input-file <path_to_your_input_file/name_of_your_input_file.yml> --reporter cli json:nodeNresults.json
