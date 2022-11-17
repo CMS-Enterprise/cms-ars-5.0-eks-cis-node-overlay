@@ -34,7 +34,7 @@ inputs:
     <% elsif ENV['BASELINE'] == 'Low' %>
     value:
       - "eks-cis-3.2.1" # AC-06
-      - "eks-cis-3.1.2" # AC-06
+      - "eks-cis-3.2.2" # AC-06
       - "eks-cis-3.2.4" # CM-07(01)
       - "eks-cis-3.2.3" # SC-08
       - "eks-cis-3.2.10" # SC-08
